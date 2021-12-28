@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background: url(./images/pic1.jpg);
+    background-size: 100% 100%;
+}
+.maincont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 3px solid black; */
+    width: 100%;
+    height: 100vh;
+    
+}
+.oooo{
+    /* border: 2px solid gray; */
+    font-size: 90px;
+    margin-top: -200px;
+    color: white;
+    animation: abc 1s linear infinite ; 
+}
+@media (max-width : 940px) {
+    .oooo{
+        font-size: 35px;
+    }
+    
+}
+@keyframes abc {
+    0%{
+       color: white; 
+    }
+    20%{
+        color: rgb(21, 255, 0);
+    }
+    40%{
+        color: crimson;
+    }
+    60%{
+        color: rgb(255, 251, 0);
+    }
+    80%{
+        color: deepskyblue;
+    }
+    100%{
+        color: tomato;
+    }
+
+}
+
+.quescont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid salmon; */
+    /* margin-top: -200px; */
+    width: 600px;
+    
+    
+}
+@media (max-width : 940px) {
+    .quescont{
+        width: 300px;
+    }
+    
+}
+.quescont > button {
+    width: 130px;
+    height: 35px;
+    font-size: 25px;
+    padding: 1px;
+    margin-top: 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    /* background: linear-gradient(to right, #fffc00, #ffffff); */
+    background: #fffc00;
+    box-shadow: 0px 0px 15px 3px #fffc00 ;
+    cursor: pointer;
+}
+ #ques{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+@media (max-width : 940px) {
+    #ques{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    
+}
+.ad{
+    font-size: 20px;
+    color: white;
+    line-height: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+@media (max-width : 940px) {
+    .ad{
+        text-align: center;
+        font-size: 14px;
+    }
+    
+}
